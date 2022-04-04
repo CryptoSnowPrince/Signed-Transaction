@@ -17,7 +17,7 @@ const config = {
         },
     },
     DEFAULT_GAS_PRICE: 100000000000,
-    chainID: 3,
+    chainID: 4,
 };
 
 export default config;
