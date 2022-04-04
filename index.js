@@ -53,8 +53,6 @@ const sendTx = async (account, tx, gasPrice, value) => {
         nonce,
         gas: web3.utils.toHex(parseInt(gasFee * 1.5)),
         gasPrice: web3.utils.toHex(gasPrice),
-        chain: await web3.eth.getChainId(),
-        hardfork: 'berlin',
     };
 
     const signedTx = await web3.eth.accounts.signTransaction(option, account.privateKey);
